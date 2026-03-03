@@ -35,9 +35,9 @@ const Login = () => {
   }
 
   return (
-    <section>
+    <section className="login-page">
       <h2 className="title-login">Bienvenido, inicia sesión</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} noValidate>
         <input
           type="email"
           placeholder="Correo electrónico"
@@ -50,9 +50,7 @@ const Login = () => {
         />
         <button>Ingresar</button>
         <p>¿No tenés cuenta? <Link to="/registro">Registrate</Link></p>
-        {
-          error && <p className="error-form">Error al ingresar</p>
-        }
+        {error && <p className="error-form">Error al ingresar</p>}
       </form>
     </section>
   )

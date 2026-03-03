@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect, useContext } from "react"
 import { ChatContext } from "../context/ChatContext.jsx"
-import { useNavigate } from "react-router-dom"
 
 const Chat = () => {
   const [text, setText] = useState("")
@@ -8,7 +7,6 @@ const Chat = () => {
 
   const { selectedUser, logout, handleMessages } = useContext(ChatContext)
 
-  const navigate = useNavigate()
 
   const handleChangeText = (event) => {
     setText(event.target.value)
@@ -62,7 +60,6 @@ const Chat = () => {
           <h2>{selectedUser.firstName} {selectedUser.lastName}</h2>
           <p>{selectedUser.address.country}</p>
         </div>
-        <button onClick={handleLogout}>Cerrar sesión</button>
       </header>
       <div className="chat-body" ref={chatBodyRef}>
         {

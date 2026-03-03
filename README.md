@@ -24,3 +24,4 @@ El proyecto está organizado en carpetas por responsabilidad. En `components` es
 El proyecto está deployado en Vercel: https://tp-final-beni.vercel.app/
 
 Para deployar, conectá el repositorio en vercel.com y hace clic en Deploy. Vercel detecta Vite automáticamente.
+Deepwiki: https://deepwiki.com/delhonbenicio-cmyk/tp-final-beni

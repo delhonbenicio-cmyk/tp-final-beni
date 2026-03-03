@@ -46,8 +46,8 @@ const Registro = () => {
     }
 
     return (
-        <section>
-            <h2>Crear cuenta</h2>
+        <section className="registro-page">
+            <h2 className="title-registro">Crear cuenta</h2>
             {/* noValidate -> sirve para desactivar la validación HTML5 ""No intervengas, yo me encargo de revisar los datos"" */}
             <form onSubmit={handleSubmit} noValidate>
                 <input type="text" placeholder="Nombre" onChange={(e) => setNombre(e.target.value)} />
