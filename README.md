@@ -1,16 +1,26 @@
-# React + Vite
+# WhatsApp Web - TP Final Frontend UTN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Maquetación de WhatsApp Web desarrollada como trabajo final de la diplomatura UTN Frontend. Permite registrarse, iniciar sesión y simular conversaciones con contactos.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
+- React
+- React Router
+- React Context
+- Vite
+- CSS
+- JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estructura del proyecto
+El proyecto está organizado en carpetas por responsabilidad. En `components` están los componentes reutilizables, en `views` las páginas, en `context` el estado global, en `router` las rutas y en `services` los datos de prueba.
 
-## React Compiler
+## Cómo ejecutar el proyecto localmente
+1. Clonar el repositorio
+2. Instalar dependencias: `npm install`
+3. Iniciar el servidor: `npm run dev`
+4. Abrir `http://localhost:5173`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Deploy
+El proyecto está deployado en Vercel: https://tp-final-beni.vercel.app/
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para deployar, conectá el repositorio en vercel.com y hace clic en Deploy. Vercel detecta Vite automáticamente.
