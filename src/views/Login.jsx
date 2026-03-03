@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { ChatContext } from "../context/ChatContext"
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -48,6 +49,7 @@ const Login = () => {
           onChange={handleChangePassword}
         />
         <button>Ingresar</button>
+        <p>¿No tenés cuenta? <Link to="/registro">Registrate</Link></p>
         {
           error && <p className="error-form">Error al ingresar</p>
         }
